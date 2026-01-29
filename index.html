@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BR Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div>
+        <h1>BR-Simulator</h1>
+        <p>Interaktiver Terminal-Story-Simulator für Betriebsratsarbeit</p>
+      </div>
+      <div class="header-actions">
+        <button id="exportBtn">Export JSON</button>
+        <label class="file-input">
+          Import JSON
+          <input type="file" id="importFile" accept="application/json" />
+        </label>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="terminal">
+        <div id="output" class="output" aria-live="polite"></div>
+        <form id="commandForm" class="command-form">
+          <span class="prompt">&gt;</span>
+          <input
+            id="commandInput"
+            type="text"
+            autocomplete="off"
+            placeholder="Befehl eingeben (hilfe)"
+          />
+          <button type="submit">Senden</button>
+        </form>
+      </section>
+
+      <aside class="status-panel">
+        <h2>Statuspanel</h2>
+        <div class="status-block">
+          <h3>Tag & Zeit</h3>
+          <p id="dayStatus"></p>
+        </div>
+        <div class="status-block">
+          <h3>Metriken</h3>
+          <ul id="metricsList"></ul>
+        </div>
+        <div class="status-block">
+          <h3>Gremium</h3>
+          <div id="gremiumStatus"></div>
+        </div>
+        <div class="status-block">
+          <h3>Fristen</h3>
+          <ul id="deadlinesList"></ul>
+        </div>
+        <div class="status-block">
+          <h3>Dokumentation</h3>
+          <p id="docStatus"></p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

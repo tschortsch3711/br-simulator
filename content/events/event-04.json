@@ -1,0 +1,25 @@
+{
+  "id": "event-04",
+  "title": "Protokoll unter Zeitdruck",
+  "roles": ["member", "chair"],
+  "description": "Das Protokoll der letzten Sitzung ist noch nicht fertig, aber die nächste Sitzung beginnt bald.",
+  "options": [
+    {
+      "label": "Protokoll sorgfältig abschließen",
+      "effects": {
+        "metrics": { "workload": 5 },
+        "meetingMinutesQuality": 6,
+        "addNote": { "quality": "belastbar", "topic": "Sitzungsprotokoll" }
+      },
+      "followUp": "Das Gremium fühlt sich gut abgesichert."
+    },
+    {
+      "label": "Nur Stichpunkte ergänzen",
+      "effects": {
+        "metrics": { "workload": -2 },
+        "meetingMinutesQuality": -4
+      },
+      "followUp": "Die Zeitersparnis kostet spätere Klarheit."
+    }
+  ]
+}

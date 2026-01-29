@@ -1,0 +1,27 @@
+{
+  "id": "gbr-01",
+  "title": "Abgabe an den GBR",
+  "roles": ["chair"],
+  "description": "Ein Thema betrifft mehrere Standorte. Du überlegst, den GBR einzuschalten.",
+  "options": [
+    {
+      "label": "Dossier sauber vorbereiten",
+      "effects": {
+        "metrics": { "teamCohesion": 2, "workload": 4 },
+        "gbrRelationship": 5,
+        "escalationLevel": "gbr",
+        "addCaseFile": { "name": "GBR-Dossier", "strength": "hoch" }
+      },
+      "followUp": "Der GBR erkennt die Relevanz und unterstützt."
+    },
+    {
+      "label": "Schnelle Weitergabe ohne Dossier",
+      "effects": {
+        "metrics": { "teamCohesion": -2 },
+        "gbrRelationship": -4,
+        "escalationLevel": "gbr"
+      },
+      "followUp": "Der GBR fragt nach, die Bearbeitung verzögert sich."
+    }
+  ]
+}

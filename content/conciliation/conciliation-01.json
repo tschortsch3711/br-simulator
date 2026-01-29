@@ -1,0 +1,25 @@
+{
+  "id": "conciliation-01",
+  "title": "Einigungsstelle wird vorbereitet",
+  "roles": ["chair"],
+  "description": "Die Einigungsstelle wird angerufen. Du musst Unterlagen, Team und Strategie sichern.",
+  "options": [
+    {
+      "label": "Aktenlage priorisieren und Team schließen",
+      "effects": {
+        "metrics": { "teamCohesion": 5, "workload": 5 },
+        "meetingMinutesQuality": 4,
+        "escalationLevel": "conciliation"
+      },
+      "followUp": "Die Vorbereitung wirkt strukturiert, das Team zieht mit."
+    },
+    {
+      "label": "Nur Kernpunkte vorbereiten",
+      "effects": {
+        "metrics": { "teamCohesion": -3, "legalRisk": 3 },
+        "escalationLevel": "conciliation"
+      },
+      "followUp": "Die Gegenseite erkennt Schwächen in der Vorbereitung."
+    }
+  ]
+}
