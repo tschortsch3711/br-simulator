@@ -1,0 +1,23 @@
+{
+  "id": "case-03",
+  "title": "Beschwerde über Leistungsdruck",
+  "roles": ["member", "chair"],
+  "description": "Mehrere Mitarbeitende berichten von neuen Leistungskennzahlen, die als unrealistisch empfunden werden.",
+  "options": [
+    {
+      "label": "Systematisch Daten sammeln",
+      "effects": {
+        "metrics": { "trustEmployees": 5, "workload": 4 },
+        "addCaseFile": { "name": "Leistungsdruck", "strength": "hoch" }
+      },
+      "followUp": "Du hast eine belastbare Basis für die nächste Verhandlung."
+    },
+    {
+      "label": "Thema in der nächsten Sitzung nur kurz ansprechen",
+      "effects": {
+        "metrics": { "trustEmployees": -3, "teamCohesion": -1 }
+      },
+      "followUp": "Die Mitarbeitenden erwarten mehr Unterstützung."
+    }
+  ]
+}

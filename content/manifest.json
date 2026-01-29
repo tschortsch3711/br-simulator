@@ -1,0 +1,46 @@
+{
+  "events": [
+    "content/events/event-01.json",
+    "content/events/event-02.json",
+    "content/events/event-03.json",
+    "content/events/event-04.json",
+    "content/events/event-05.json",
+    "content/events/event-06.json",
+    "content/events/event-07.json",
+    "content/events/event-08.json",
+    "content/events/event-09.json",
+    "content/events/event-10.json"
+  ],
+  "cases": [
+    "content/cases/case-01.json",
+    "content/cases/case-02.json",
+    "content/cases/case-03.json",
+    "content/cases/case-04.json",
+    "content/cases/case-05.json",
+    "content/cases/case-06.json",
+    "content/cases/case-07.json",
+    "content/cases/case-08.json"
+  ],
+  "negotiations": [
+    "content/negotiations/negotiation-01.json",
+    "content/negotiations/negotiation-02.json",
+    "content/negotiations/negotiation-03.json",
+    "content/negotiations/negotiation-04.json",
+    "content/negotiations/negotiation-05.json",
+    "content/negotiations/negotiation-06.json"
+  ],
+  "gbr": [
+    "content/gbr/gbr-01.json",
+    "content/gbr/gbr-02.json",
+    "content/gbr/gbr-03.json"
+  ],
+  "conciliation": [
+    "content/conciliation/conciliation-01.json",
+    "content/conciliation/conciliation-02.json"
+  ],
+  "knowledge": [
+    "content/knowledge/knowledge-01.json",
+    "content/knowledge/knowledge-02.json",
+    "content/knowledge/knowledge-03.json"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "negotiation-06",
+  "title": "Digitales Überwachungstool",
+  "roles": ["chair"],
+  "description": "Der AG will ein neues Monitoring-Tool einführen. Das Gremium ist alarmiert.",
+  "options": [
+    {
+      "label": "Einigungsstelle in Aussicht stellen",
+      "effects": {
+        "metrics": { "trustEmployees": 4, "legalRisk": -2, "stress": 5 },
+        "escalationLevel": "conciliation"
+      },
+      "followUp": "Die Eskalation erhöht den Druck, aber erfordert starke Vorbereitung."
+    },
+    {
+      "label": "Pilotprojekt mit klaren Regeln",
+      "effects": {
+        "metrics": { "trustEmployer": 2, "teamCohesion": -1 },
+        "addCaseFile": { "name": "Monitoring Pilot", "strength": "mittel" }
+      },
+      "followUp": "Der AG zeigt sich kooperativer, intern wächst Skepsis."
+    }
+  ]
+}

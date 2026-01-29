@@ -1,0 +1,25 @@
+{
+  "id": "gbr-02",
+  "title": "GBR fordert Nacharbeit",
+  "roles": ["chair"],
+  "description": "Der GBR meldet zurück, dass die Unterlagen unvollständig sind.",
+  "options": [
+    {
+      "label": "Nacharbeit leisten und Qualität erhöhen",
+      "effects": {
+        "metrics": { "workload": 3, "teamCohesion": 2 },
+        "gbrRelationship": 4,
+        "meetingMinutesQuality": 3
+      },
+      "followUp": "Die Beziehung zum GBR stabilisiert sich."
+    },
+    {
+      "label": "Kritik zurückweisen",
+      "effects": {
+        "metrics": { "teamCohesion": -3, "stress": 2 },
+        "gbrRelationship": -5
+      },
+      "followUp": "Die Zusammenarbeit wird schwieriger."
+    }
+  ]
+}

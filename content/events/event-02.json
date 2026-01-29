@@ -1,0 +1,31 @@
+{
+  "id": "event-02",
+  "title": "Kurzfristige AG-Mail",
+  "roles": ["chair"],
+  "description": "Die Arbeitgeberseite bittet um eine schnelle Stellungnahme zu einer geplanten Schichtänderung.\nDu musst entscheiden, wie du die Frist sicherstellst.",
+  "options": [
+    {
+      "label": "Sondersitzung einberufen und Frist im Auge behalten",
+      "effects": {
+        "metrics": { "teamCohesion": 4, "workload": 6 },
+        "addDeadline": {
+          "title": "Stellungnahme Schichtänderung",
+          "days": 2,
+          "consequence": {
+            "metrics": { "trustEmployer": -6, "legalRisk": 8 },
+            "formalStatus": "riskant"
+          }
+        }
+      },
+      "followUp": "Du setzt eine Sondersitzung an und informierst das Gremium."
+    },
+    {
+      "label": "Antwort ohne Beschluss schicken",
+      "effects": {
+        "metrics": { "teamCohesion": -6, "trustEmployer": 2 },
+        "formalStatus": "fehlerhaft"
+      },
+      "followUp": "Die schnelle Antwort entlastet kurzfristig, sorgt aber intern für Unruhe."
+    }
+  ]
+}

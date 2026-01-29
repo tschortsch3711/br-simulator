@@ -1,0 +1,24 @@
+{
+  "id": "negotiation-01",
+  "title": "Verhandlung über Homeoffice-Regeln",
+  "roles": ["chair"],
+  "description": "Der AG will Homeoffice stark einschränken. Du führst die Verhandlung.",
+  "options": [
+    {
+      "label": "Klare rote Linien setzen",
+      "effects": {
+        "metrics": { "trustEmployees": 5, "trustEmployer": -3, "stress": 4 },
+        "addCaseFile": { "name": "Homeoffice-Position", "strength": "hoch" }
+      },
+      "followUp": "Die Belegschaft spürt Rückhalt, der AG reagiert reserviert."
+    },
+    {
+      "label": "Kompromiss anbieten",
+      "effects": {
+        "metrics": { "trustEmployer": 4, "teamCohesion": -2 },
+        "addCaseFile": { "name": "Homeoffice-Kompromiss", "strength": "mittel" }
+      },
+      "followUp": "Der Ton bleibt kooperativ, intern gibt es Kritik."
+    }
+  ]
+}
