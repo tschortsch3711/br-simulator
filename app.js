@@ -294,15 +294,13 @@ function explainGuidance() {
 }
 
 async function loadContent() {
-  const baseUrl = new URL("./", window.location.href);
-  const manifestUrl = new URL("content/manifest.json", baseUrl);
-  const manifest = await fetch(manifestUrl.toString()).then((res) => res.json());
+  const manifest = await fetch("content/manifest.json").then((res) => res.json());
   const categories = Object.keys(manifest);
 
   for (const category of categories) {
     const files = manifest[category];
     const entries = await Promise.all(
-      files.map((file) => fetch(new URL(file, baseUrl).toString()).then((res) => res.json()))
+      files.map((file) => fetch(file).then((res) => res.json()))
     );
     contentStore[category] = entries;
   }
