@@ -1,0 +1,24 @@
+{
+  "id": "conciliation-02",
+  "title": "Einigungsstellen-Spruch",
+  "roles": ["chair"],
+  "description": "Die Einigungsstelle trifft ihren Spruch. Die Entscheidung basiert auf Faktenlage, Teamkohäsion und Fristentreue.",
+  "options": [
+    {
+      "label": "Spruch akzeptieren und intern stabilisieren",
+      "effects": {
+        "metrics": { "teamCohesion": 4, "trustEmployees": 2 },
+        "escalationLevel": "none"
+      },
+      "followUp": "Der Spruch wird umgesetzt, die Belegschaft erwartet nun Transparenz."
+    },
+    {
+      "label": "Spruch kritisch kommunizieren",
+      "effects": {
+        "metrics": { "trustEmployees": -2, "trustEmployer": -3, "stress": 3 },
+        "escalationLevel": "none"
+      },
+      "followUp": "Die Stimmung bleibt angespannt, der Fall wirkt nach."
+    }
+  ]
+}

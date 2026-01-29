@@ -1,0 +1,23 @@
+{
+  "id": "case-06",
+  "title": "Hinweis auf Datenschutzproblem",
+  "roles": ["member", "chair"],
+  "description": "Ein Mitarbeitender meldet, dass sensible Daten offen zugänglich sind.",
+  "options": [
+    {
+      "label": "Sofortige Klärung mit Datenschutzbeauftragten",
+      "effects": {
+        "metrics": { "legalRisk": -5, "reputation": 3, "workload": 3 },
+        "addNote": { "quality": "belastbar", "topic": "Datenschutz" }
+      },
+      "followUp": "Du dokumentierst den Vorfall und reduzierst Risiken."
+    },
+    {
+      "label": "Hinweis intern notieren und abwarten",
+      "effects": {
+        "metrics": { "legalRisk": 4, "stress": -1 }
+      },
+      "followUp": "Das Thema bleibt kritisch und kann eskalieren."
+    }
+  ]
+}

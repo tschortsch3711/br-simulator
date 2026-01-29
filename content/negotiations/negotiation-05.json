@@ -1,0 +1,24 @@
+{
+  "id": "negotiation-05",
+  "title": "Einsatz von Fremdpersonal",
+  "roles": ["chair"],
+  "description": "Der AG plant den Einsatz von Fremdpersonal in kritischen Bereichen.",
+  "options": [
+    {
+      "label": "Mitbestimmung konsequent einfordern",
+      "effects": {
+        "metrics": { "trustEmployees": 5, "trustEmployer": -4, "stress": 4 },
+        "addCaseFile": { "name": "Fremdpersonal", "strength": "hoch" }
+      },
+      "followUp": "Die Linie ist klar, die Fronten verhärten sich."
+    },
+    {
+      "label": "Risikoanalyse verlangen",
+      "effects": {
+        "metrics": { "legalRisk": -2, "workload": 3 },
+        "addNote": { "quality": "solide", "topic": "Fremdpersonal Risikoanalyse" }
+      },
+      "followUp": "Du gewinnst Zeit und Daten für weitere Schritte."
+    }
+  ]
+}

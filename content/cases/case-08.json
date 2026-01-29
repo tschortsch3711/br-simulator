@@ -1,0 +1,23 @@
+{
+  "id": "case-08",
+  "title": "Mitarbeiterin bittet um Begleitung",
+  "roles": ["member", "chair"],
+  "description": "Eine Mitarbeiterin soll zu einem Personalgespräch und fragt nach BR-Beistand.",
+  "options": [
+    {
+      "label": "Begleitung zusagen und vorbereiten",
+      "effects": {
+        "metrics": { "trustEmployees": 6, "workload": 4 },
+        "addCaseFile": { "name": "Personalgespräch Beistand", "strength": "mittel" }
+      },
+      "followUp": "Du stärkst Vertrauen und sammelst neue Informationen."
+    },
+    {
+      "label": "Beistand aus Zeitgründen ablehnen",
+      "effects": {
+        "metrics": { "trustEmployees": -6, "stress": -2 }
+      },
+      "followUp": "Die Mitarbeiterin wirkt enttäuscht und distanziert."
+    }
+  ]
+}

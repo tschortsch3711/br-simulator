@@ -1,0 +1,29 @@
+{
+  "id": "event-07",
+  "title": "Interne Blockade",
+  "roles": ["chair"],
+  "description": "Zwei Fraktionen blockieren sich bei einer Beschlussvorlage.",
+  "options": [
+    {
+      "label": "Moderation und Kompromissvorschlag",
+      "effects": {
+        "metrics": { "teamCohesion": 8, "stress": 4 }
+      },
+      "followUp": "Die Fronten entspannen sich, ein tragfähiger Beschluss wird möglich."
+    },
+    {
+      "label": "Beschluss vertagen",
+      "effects": {
+        "metrics": { "teamCohesion": -5, "workload": 3 },
+        "addDeadline": {
+          "title": "Beschluss erneut aufsetzen",
+          "days": 2,
+          "consequence": {
+            "metrics": { "teamCohesion": -6, "legalRisk": 5 }
+          }
+        }
+      },
+      "followUp": "Das Thema bleibt offen und belastet die Agenda."
+    }
+  ]
+}
