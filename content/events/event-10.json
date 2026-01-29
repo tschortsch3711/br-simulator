@@ -1,0 +1,23 @@
+{
+  "id": "event-10",
+  "title": "Krisenkommunikation intern",
+  "roles": ["member", "chair"],
+  "description": "Die Belegschaft erwartet ein klares Update nach einer hitzigen Verhandlung.",
+  "options": [
+    {
+      "label": "Transparente Zusammenfassung liefern",
+      "effects": {
+        "metrics": { "trustEmployees": 6, "stress": 3 },
+        "addNote": { "quality": "belastbar", "topic": "Krisenkommunikation" }
+      },
+      "followUp": "Die Mitarbeitenden fühlen sich ernst genommen."
+    },
+    {
+      "label": "Kommunikation knapp halten",
+      "effects": {
+        "metrics": { "trustEmployees": -5, "stress": -2 }
+      },
+      "followUp": "Die Ruhe kehrt langsam zurück, doch Fragen bleiben offen."
+    }
+  ]
+}

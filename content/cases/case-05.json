@@ -1,0 +1,23 @@
+{
+  "id": "case-05",
+  "title": "Beschwerde über Kurzarbeit",
+  "roles": ["member", "chair"],
+  "description": "Mitarbeitende sind unsicher, ob die Kurzarbeitsregelungen korrekt umgesetzt werden.",
+  "options": [
+    {
+      "label": "Kurzarbeitsunterlagen prüfen",
+      "effects": {
+        "metrics": { "trustEmployees": 3, "legalRisk": -3, "workload": 4 },
+        "addCaseFile": { "name": "Kurzarbeit", "strength": "mittel" }
+      },
+      "followUp": "Du sicherst die Dokumentation für mögliche Eskalationen."
+    },
+    {
+      "label": "An den Vorsitz verweisen",
+      "effects": {
+        "metrics": { "trustEmployees": -2, "teamCohesion": -1 }
+      },
+      "followUp": "Die Betroffenen warten länger auf Klarheit."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "event-09",
+  "title": "Unterlagen fehlen",
+  "roles": ["member", "chair"],
+  "description": "Für einen Fall fehlen wichtige Unterlagen. Ohne diese drohen formale Risiken.",
+  "options": [
+    {
+      "label": "Unterlagen sofort anfordern",
+      "effects": {
+        "metrics": { "legalRisk": -4, "workload": 4 },
+        "addDeadline": {
+          "title": "Unterlagen nachfordern",
+          "days": 3,
+          "consequence": {
+            "metrics": { "legalRisk": 6, "trustEmployees": -3 },
+            "formalStatus": "riskant"
+          }
+        }
+      },
+      "followUp": "Du stellst formale Sicherheit her, aber es bindet Ressourcen."
+    },
+    {
+      "label": "Mit unvollständigen Infos weiterarbeiten",
+      "effects": {
+        "metrics": { "legalRisk": 5, "stress": 2 },
+        "formalStatus": "riskant"
+      },
+      "followUp": "Kurzfristig bleibst du handlungsfähig, aber Risiken steigen."
+    }
+  ]
+}

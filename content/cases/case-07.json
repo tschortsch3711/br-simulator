@@ -1,0 +1,30 @@
+{
+  "id": "case-07",
+  "title": "Versetzung ohne Anhörung",
+  "roles": ["member", "chair"],
+  "description": "Eine Kollegin wurde versetzt, ohne dass der BR eingebunden wurde.",
+  "options": [
+    {
+      "label": "Formalen Widerspruch vorbereiten",
+      "effects": {
+        "metrics": { "trustEmployees": 5, "legalRisk": -2, "workload": 5 },
+        "addDeadline": {
+          "title": "Widerspruch Versetzung",
+          "days": 2,
+          "consequence": {
+            "metrics": { "trustEmployees": -4, "legalRisk": 6 },
+            "formalStatus": "fehlerhaft"
+          }
+        }
+      },
+      "followUp": "Du setzt ein klares Signal gegen formale Fehler."
+    },
+    {
+      "label": "Gespräch suchen, ohne formalen Schritt",
+      "effects": {
+        "metrics": { "trustEmployees": -3, "trustEmployer": 2 }
+      },
+      "followUp": "Du hältst die Beziehung ruhig, aber die Kollegin fühlt sich allein."
+    }
+  ]
+}
