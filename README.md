@@ -42,26 +42,11 @@ Neue Inhalte in der `content/manifest.json` ergänzen, damit die App sie lädt.
 ### BR & Gremium
 - Teamkohäsion und Fraktionen beeinflussen Beschlüsse.
 - Entscheidungen verändern Vertrauen, Stress, Reputation und Arbeitslast.
-- Gremienmitglieder reagieren auf deinen Stil (Vertrauen, Konfliktmarker).
 
 ### Fristen & Formalien
 - Fristen laufen tageweise herunter.
 - Versäumte Fristen lösen automatische Konsequenzen aus.
 - Formalstatus beeinflusst Verhandlungspositionen.
-
-### Guided Actions & Expertenmodus
-- Standardmäßig werden empfohlene nächste Schritte angezeigt.
-- `hinweis` erklärt, warum bestimmte Schritte empfohlen sind.
-- Mit `fuehrung aus` kann der Expertenmodus aktiviert werden.
-
-### Kompetenzprofil & Chronik
-- Entscheidungen beeinflussen langfristige Kompetenzachsen.
-- Die Chronik hält Beschlüsse, Eskalationen und Konflikte fest.
-- Am Ende gibt es eine „Amtszeit im Rückblick“-Auswertung.
-
-### Stress & Selbstschutz
-- Hoher Stress schränkt Optionen ein und kann Fehler auslösen.
-- Gegenmaßnahmen: `pause nehmen`, `aufgabe delegieren`, `schulung besuchen`, `kollegiales gespraech`.
 
 ### GBR
 - Fälle können an den Gesamtbetriebsrat übergeben werden.
@@ -82,18 +67,3 @@ Beiträge sind willkommen! Bitte beachte:
 - Keine echten Personen.
 - Sensible Themen respektvoll behandeln.
 - Hinweis auf professionelle Stellen bei Konflikten.
-
-## Befehle (Deutsch)
-- `hilfe` – Übersicht aller Kommandos
-- `rolle mitglied` | `rolle vorsitz`
-- `weiter` – Zeitslot fortschreiten
-- `waehlen <nummer>` – Event-Option wählen
-- `posteingang`, `faelle`, `fristen`
-- `gremium status`, `gremium sprechen <name>`, `sitzung starten`, `abstimmen`
-- `notiz anlegen <qualitaet> <thema>`
-- `pause nehmen`, `aufgabe delegieren`, `schulung besuchen`, `kollegiales gespraech`
-- `eskalieren gbr`, `einigungsstelle starten`
-- `kompetenz`, `chronik`
-- `fuehrung an`, `fuehrung aus`, `hinweis`
-- `speichern`, `laden`, `zuruecksetzen`
-- `antwort <nr> <text>` (am Ende)
