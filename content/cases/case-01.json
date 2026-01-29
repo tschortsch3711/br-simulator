@@ -1,0 +1,24 @@
+{
+  "id": "case-01",
+  "title": "Mitarbeiterin meldet Überstunden-Druck",
+  "roles": ["member", "chair"],
+  "description": "Eine Mitarbeiterin berichtet von dauerhaftem Überstunden-Druck ohne Ausgleich.\nSie bittet um Unterstützung und Rat.",
+  "options": [
+    {
+      "label": "Fallakte anlegen und Gespräch mit AG vorbereiten",
+      "effects": {
+        "metrics": { "trustEmployees": 5, "workload": 4 },
+        "addCaseFile": { "name": "Überstunden-Druck", "strength": "hoch" }
+      },
+      "followUp": "Du leitest formale Schritte ein und hältst die Mitarbeiterin auf dem Laufenden."
+    },
+    {
+      "label": "Nur informelle Beratung geben",
+      "effects": {
+        "metrics": { "trustEmployees": -2, "stress": -1 },
+        "addCaseFile": { "name": "Überstunden-Druck", "strength": "niedrig" }
+      },
+      "followUp": "Die Mitarbeiterin fühlt sich teilweise unterstützt, aber es fehlen klare Schritte."
+    }
+  ]
+}

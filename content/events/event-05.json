@@ -1,0 +1,29 @@
+{
+  "id": "event-05",
+  "title": "Gerüchteküche im Betrieb",
+  "roles": ["member", "chair"],
+  "description": "In der Kantine kursiert das Gerücht über Standortschließungen. Mitarbeitende erwarten klare Aussagen.",
+  "options": [
+    {
+      "label": "Informationsrunde mit dem AG anstoßen",
+      "effects": {
+        "metrics": { "trustEmployees": 4, "trustEmployer": -2, "workload": 5 },
+        "addDeadline": {
+          "title": "AG-Informationsrunde planen",
+          "days": 3,
+          "consequence": {
+            "metrics": { "trustEmployees": -6, "reputation": -4 }
+          }
+        }
+      },
+      "followUp": "Du signalisierst Aktivität und baust Druck auf den AG auf."
+    },
+    {
+      "label": "Abwarten und intern beobachten",
+      "effects": {
+        "metrics": { "trustEmployees": -3, "stress": -1 }
+      },
+      "followUp": "Die Ruhe hält kurz, die Unsicherheit bleibt."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "gbr-03",
+  "title": "GBR übernimmt Fall",
+  "roles": ["chair"],
+  "description": "Der GBR signalisiert Übernahme, erwartet aber klare Kommunikation an die Belegschaft.",
+  "options": [
+    {
+      "label": "Transparente Kommunikation vorbereiten",
+      "effects": {
+        "metrics": { "trustEmployees": 4, "reputation": 2 },
+        "gbrRelationship": 3
+      },
+      "followUp": "Die Belegschaft fühlt sich informiert, der GBR ist zufrieden."
+    },
+    {
+      "label": "Kommunikation knapp halten",
+      "effects": {
+        "metrics": { "trustEmployees": -4 },
+        "gbrRelationship": -2
+      },
+      "followUp": "Der GBR vermisst Rückhalt aus dem Betrieb."
+    }
+  ]
+}
