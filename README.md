@@ -26,6 +26,7 @@ Diese Simulation stellt keine Rechtsberatung dar. Sie vermittelt ausschließlich
 2. Unter **Settings → Pages** den Branch (z. B. `main`) auswählen.
 3. Root-Verzeichnis (`/`) als Quelle nutzen.
 4. Die Anwendung läuft vollständig statisch (HTML/CSS/JS) und ist Pages-kompatibel.
+5. Die Datei `.nojekyll` ist enthalten, damit GitHub Pages die Inhalte unverändert ausliefert.
 
 ## Content erweitern
 Die Storys sind datengetrieben und liegen in JSON-Dateien unter `/content`:

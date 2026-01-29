@@ -1212,6 +1212,9 @@ commandForm.addEventListener("submit", (event) => {
 });
 
 loadContent().then(init).catch((error) => {
-  addLine("Content konnte nicht geladen werden.", "danger");
+  addLine(
+    "Content konnte nicht geladen werden. Stelle sicher, dass die App über einen lokalen Webserver läuft und die Datei content/manifest.json erreichbar ist.",
+    "danger"
+  );
   console.error(error);
 });
