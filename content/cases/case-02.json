@@ -1,0 +1,23 @@
+{
+  "id": "case-02",
+  "title": "Konflikt zwischen Teamleitung und Azubi",
+  "roles": ["member", "chair"],
+  "description": "Ein Auszubildender fühlt sich unfair behandelt und bittet um Vermittlung.",
+  "options": [
+    {
+      "label": "Mediationsgespräch organisieren",
+      "effects": {
+        "metrics": { "trustEmployees": 4, "teamCohesion": 2 },
+        "addNote": { "quality": "solide", "topic": "Azubi-Konflikt" }
+      },
+      "followUp": "Die Beteiligten sind offen für ein klärendes Gespräch."
+    },
+    {
+      "label": "Fall an externe Beratungsstelle empfehlen",
+      "effects": {
+        "metrics": { "trustEmployees": -2, "workload": -1 }
+      },
+      "followUp": "Du bleibst beobachtend, riskierst aber Distanz."
+    }
+  ]
+}

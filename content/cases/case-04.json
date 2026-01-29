@@ -1,0 +1,23 @@
+{
+  "id": "case-04",
+  "title": "Rückkehrgespräch nach Krankheit",
+  "roles": ["member", "chair"],
+  "description": "Eine Rückkehrerin ist unsicher wegen ihrer neuen Aufgaben. Du wirst um Unterstützung gebeten.",
+  "options": [
+    {
+      "label": "Gespräch begleiten und dokumentieren",
+      "effects": {
+        "metrics": { "trustEmployees": 4, "workload": 3 },
+        "addNote": { "quality": "belastbar", "topic": "Rückkehrgespräch" }
+      },
+      "followUp": "Die Mitarbeiterin fühlt sich gestärkt."
+    },
+    {
+      "label": "Nur telefonisch kurz beraten",
+      "effects": {
+        "metrics": { "trustEmployees": -2, "stress": -1 }
+      },
+      "followUp": "Die Unterstützung bleibt oberflächlich."
+    }
+  ]
+}
