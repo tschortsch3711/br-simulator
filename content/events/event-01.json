@@ -1,0 +1,23 @@
+{
+  "id": "event-01",
+  "title": "Spontane Sprechstunde im Flur",
+  "roles": ["member", "chair"],
+  "description": "Zwei Mitarbeitende sprechen dich auf Gerüchte über eine Umstrukturierung an.\nSie wirken verunsichert und erwarten eine schnelle Einschätzung.",
+  "options": [
+    {
+      "label": "Beruhigen und Informationssammlung ankündigen",
+      "effects": {
+        "metrics": { "trustEmployees": 5, "workload": 4 },
+        "addNote": { "quality": "solide", "topic": "Umstrukturierungsgerüchte" }
+      },
+      "followUp": "Du versprichst, Fakten einzuholen, und dokumentierst die Fragen für die nächste Sitzung."
+    },
+    {
+      "label": "Kein Kommentar, bis offizielle Infos vorliegen",
+      "effects": {
+        "metrics": { "trustEmployees": -4, "stress": -2 }
+      },
+      "followUp": "Die Mitarbeitenden gehen mit gemischten Gefühlen auseinander."
+    }
+  ]
+}

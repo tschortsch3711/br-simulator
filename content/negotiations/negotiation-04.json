@@ -1,0 +1,24 @@
+{
+  "id": "negotiation-04",
+  "title": "Verhandlung über Leistungsprämien",
+  "roles": ["chair"],
+  "description": "Der AG will Leistungsprämien stärker individualisieren. Das Gremium sieht Risiken.",
+  "options": [
+    {
+      "label": "Transparente Kriterien fordern",
+      "effects": {
+        "metrics": { "trustEmployees": 4, "legalRisk": -2 },
+        "meetingMinutesQuality": 2
+      },
+      "followUp": "Du stärkst Fairness und beugst Konflikten vor."
+    },
+    {
+      "label": "Kompromiss mit Pilotphase",
+      "effects": {
+        "metrics": { "trustEmployer": 3, "teamCohesion": -1 },
+        "addCaseFile": { "name": "Leistungsprämien Pilot", "strength": "mittel" }
+      },
+      "followUp": "Der AG stimmt eher zu, intern bleiben Fragen offen."
+    }
+  ]
+}

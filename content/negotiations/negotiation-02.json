@@ -1,0 +1,24 @@
+{
+  "id": "negotiation-02",
+  "title": "Budgetkürzung bei Weiterbildung",
+  "roles": ["chair"],
+  "description": "Der AG plant, das Weiterbildungsbudget zu kürzen. Mitarbeitende erwarten Widerstand.",
+  "options": [
+    {
+      "label": "Datenbasierte Argumentation nutzen",
+      "effects": {
+        "metrics": { "trustEmployees": 4, "reputation": 3, "workload": 4 },
+        "addNote": { "quality": "belastbar", "topic": "Weiterbildung" }
+      },
+      "followUp": "Die Verhandlungsbasis wird konkreter und schwerer angreifbar."
+    },
+    {
+      "label": "Emotionale Position beziehen",
+      "effects": {
+        "metrics": { "trustEmployees": 2, "trustEmployer": -4 },
+        "meetingMinutesQuality": -2
+      },
+      "followUp": "Die Stimmung spitzt sich zu, das Gremium ist gespalten."
+    }
+  ]
+}

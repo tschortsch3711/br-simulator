@@ -1,0 +1,24 @@
+{
+  "id": "event-06",
+  "title": "Feedback an den Vorsitz",
+  "roles": ["member"],
+  "description": "Du bereitest ein Briefing für den Vorsitz vor. Die Faktenlage ist unklar.",
+  "options": [
+    {
+      "label": "Faktencheck priorisieren",
+      "effects": {
+        "metrics": { "workload": 4, "reputation": 3 },
+        "addCaseFile": { "name": "Briefing Faktencheck", "strength": "hoch" }
+      },
+      "followUp": "Das Briefing ist belastbar und stärkt die Verhandlungsposition."
+    },
+    {
+      "label": "Nur ein kurzes Update senden",
+      "effects": {
+        "metrics": { "reputation": -2 },
+        "addCaseFile": { "name": "Briefing Kurzinfo", "strength": "niedrig" }
+      },
+      "followUp": "Der Vorsitz hat weniger Material für die nächste Gesprächsrunde."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "event-08",
+  "title": "Informelles Gespräch mit dem AG",
+  "roles": ["chair"],
+  "description": "Der Arbeitgeber bittet um ein informelles Gespräch außerhalb der Sitzung.\nDu kannst es nutzen, um Vertrauen aufzubauen oder klare Positionen einzufordern.",
+  "options": [
+    {
+      "label": "Kooperativer Austausch",
+      "effects": {
+        "metrics": { "trustEmployer": 6, "reputation": 2 },
+        "gbrRelationship": 2
+      },
+      "followUp": "Die Atmosphäre verbessert sich, aber das Gremium erwartet Transparenz."
+    },
+    {
+      "label": "Klare Forderungen platzieren",
+      "effects": {
+        "metrics": { "trustEmployer": -4, "trustEmployees": 3 },
+        "teamCohesion": 2
+      },
+      "followUp": "Du zeigst Kante, die Verhandlungsposition wird klarer."
+    }
+  ]
+}
