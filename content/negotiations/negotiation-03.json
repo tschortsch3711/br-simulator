@@ -1,0 +1,31 @@
+{
+  "id": "negotiation-03",
+  "title": "Schichtmodell-Reform",
+  "roles": ["chair"],
+  "description": "Das neue Schichtmodell soll kurzfristig eingeführt werden. Die Zeit drängt.",
+  "options": [
+    {
+      "label": "Beschluss und klare Fristen einfordern",
+      "effects": {
+        "metrics": { "teamCohesion": 3, "stress": 4 },
+        "addDeadline": {
+          "title": "Schichtmodell-Beschluss",
+          "days": 2,
+          "consequence": {
+            "metrics": { "legalRisk": 5, "trustEmployees": -4 },
+            "formalStatus": "riskant"
+          }
+        }
+      },
+      "followUp": "Du erhöhst den Druck, aber die Frist ist eng."
+    },
+    {
+      "label": "Mehr Zeit verhandeln",
+      "effects": {
+        "metrics": { "trustEmployer": -2, "teamCohesion": 2 },
+        "formalStatus": "korrekt"
+      },
+      "followUp": "Du gewinnst Zeit für das Gremium, der AG ist jedoch ungeduldig."
+    }
+  ]
+}

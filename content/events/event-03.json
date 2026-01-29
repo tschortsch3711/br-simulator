@@ -1,0 +1,24 @@
+{
+  "id": "event-03",
+  "title": "Konflikt in der Ausschussarbeit",
+  "roles": ["member"],
+  "description": "Im Arbeitsschutzausschuss prallen zwei Meinungen hart aufeinander.\nDu kannst vermitteln oder Position beziehen.",
+  "options": [
+    {
+      "label": "Moderieren und gemeinsame Linie finden",
+      "effects": {
+        "metrics": { "teamCohesion": 6, "stress": 3 },
+        "meetingMinutesQuality": 4
+      },
+      "followUp": "Die Diskussion bleibt konstruktiv, auch wenn sie länger dauert."
+    },
+    {
+      "label": "Sich der konfrontativen Fraktion anschließen",
+      "effects": {
+        "metrics": { "teamCohesion": -4, "trustEmployees": 2 },
+        "meetingMinutesQuality": -3
+      },
+      "followUp": "Kurzfristig zeigst du Profil, langfristig knirscht es im Gremium."
+    }
+  ]
+}
