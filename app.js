@@ -130,7 +130,7 @@ function loadState() {
     try {
       return JSON.parse(saved);
     } catch (error) {
-      console.error("State load failed", error);
+      console.error("Status konnte nicht geladen werden", error);
     }
   }
   return stateDefaults();
